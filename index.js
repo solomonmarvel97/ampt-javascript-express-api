@@ -16,7 +16,7 @@ api.get("/greet/:name", (req, res) => {
     return res.status(400).send({ message: "Missing route param for `name`!" });
   }
 
-  return res.status(200).send({ message: `Hello ${name}!` });
+  return res.status(200).send({ message: `Welcome to Our API Oga ${name}!` });
 });
 
 api.post("/submit", async (req, res) => {
